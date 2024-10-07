@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de basquet</title>
+    <link rel="stylesheet" href="index.css">  
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="scoreboard-container">
+        <img src="board_component_with_lion_logo 1.png" alt="Scoreboard" class="scoreboard">
+        <div class="text-container">
+            <div class="team home">Home</div>
+            <div class="team guest">Guest</div>
+            <span class="team home score" id="home-score"></span>
+            <span class="team guest score" id="guest-score"></span>
+            <button class="time" id= 'clock' onclick="stopRun()" onkeypress="stopRun()"></button>
+            <button class="home home-plus-1" onclick="add('home',1)">+1</button>
+            <button class="home home-plus-2" onclick="add('home',2)">+2</button>
+            <button class="home home-plus-3" onclick="add('home',3)">+3</button>
+            <button class="guest guest-plus-1" onclick="add('guest',1)">+1</button>
+            <button class="guest guest-plus-2" onclick="add('guest',2)">+2</button>
+            <button class="guest guest-plus-3" onclick="add('guest',3)">+3</button>
+
+        </div>
+    </div>
+</body>
+</html>

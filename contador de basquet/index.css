@@ -1,0 +1,136 @@
+body {
+    background-image: url('background-image.png');
+    background-size: cover; /* This will make the image cover the entire background */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+}
+
+.scoreboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+.scoreboard {
+    width: 720px;
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0;
+}
+
+.text-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.team {
+    color: #000;
+    font-family: "BACK TO SCHOOL PERSONAL USE";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top:50%
+}
+
+.home {
+    position: absolute;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.guest {
+    position: absolute;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+.score {
+    color: #000;
+    font-family: "Erbos Draco 1st NBP";
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 65%
+}
+
+.home-score {
+    position: absolute;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.guest-score {
+    position: absolute;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.time {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-family: "Cursed Timer ULiL";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+button {
+    color: #B60E0E;
+    font-family: "Erbos Draco 1st NBP";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px; /* Adjust margin as needed */
+    bottom: 15%;
+
+}
+
+button.home {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+button.guest {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+button.home-plus-1 {
+    left: 30%;
+}
+
+button.home-plus-2 {
+    left: 35%;
+}
+
+button.home-plus-3 {
+    left: 40%;
+}
+
+button.guest-plus-1 {
+    left: 60%;
+}
+
+button.guest-plus-2 {
+    left: 65%;
+}
+
+button.guest-plus-3 {
+    left: 70%;
+}
